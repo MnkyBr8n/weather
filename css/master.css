@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #014f86 0, #001d3d 45%, #000814 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero + title */
+
+.hero {
+  position: relative;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg")
+              center top / cover no-repeat;
+  padding: 60px 20px 40px;
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 40, 0.7), rgba(0, 0, 70, 0.9));
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffe66d;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.powered {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.controls label {
+  margin-right: 8px;
+}
+
+#citySelect {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Status text */
+
+.status {
+  font-size: 14px;
+  min-height: 18px;
+  margin-top: 4px;
+}
+
+/* Forecast cards */
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.forecast-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.forecast-card {
+  background: rgba(0, 37, 84, 0.9);
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.forecast-date {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.forecast-icon {
+  font-size: 34px;
+  margin: 6px 0;
+}
+
+.forecast-desc {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.forecast-temp {
+  font-size: 13px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  padding: 10px 0 16px;
+  opacity: 0.7;
+}
